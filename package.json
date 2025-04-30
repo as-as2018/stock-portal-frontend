@@ -1,6 +1,6 @@
 {
   "name": "stock-portal-frontend",
-  "proxy": "http://localhost:5000",
+  "proxy": "https://stock-trading-portal-dlx2.onrender.com/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
