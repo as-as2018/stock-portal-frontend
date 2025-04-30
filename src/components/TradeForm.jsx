@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import API from '../api';
+import { toast } from 'react-toastify';
 
 export default function TradeForm() {
   const [form, setForm] = useState({ stock_name: '', quantity: '', broker_name: '', price: '', mode: 'FIFO' });
@@ -13,6 +14,7 @@ export default function TradeForm() {
       setMessage('Trade submitted successfully');
     } catch {
       setMessage('Error submitting trade');
+      toast.error("Missing required fields");
     }
   };
 

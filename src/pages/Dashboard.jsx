@@ -2,6 +2,7 @@ import TradeForm from '../components/TradeForm';
 import LotViewer from '../components/LotViewer';
 import BulkUpload from '../components/BulkUpload';
 import TradeList from '../components/TradeList';
+import { Flip, ToastContainer } from "react-toastify";
 
 export default function Dashboard() {
   return (
@@ -11,6 +12,19 @@ export default function Dashboard() {
       <BulkUpload />
       <TradeList />
       <LotViewer />
+      <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                // theme="colored"
+                transition={Flip}
+              />
     </div>
   );
 }
